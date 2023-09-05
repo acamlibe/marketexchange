@@ -1,0 +1,10 @@
+name: MarketExchange
+author: Ali Camlibel
+version: 1.0.0
+main: com.alicamlibel.marketexchange.MarketExchangePlugin
+api-version: 1.20
+commands:
+  mex:
+    description: Market Exchange Base Command
+    usage: /<command>
+    permission: marketexchange.mex
