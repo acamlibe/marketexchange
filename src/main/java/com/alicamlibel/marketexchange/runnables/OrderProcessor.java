@@ -10,8 +10,8 @@ import java.util.List;
 
 public class OrderProcessor extends BukkitRunnable {
 
-    private BuyOrderRepository buyOrderRepository;
-    private SellOrderRepository sellOrderRepository;
+    private final BuyOrderRepository buyOrderRepository;
+    private final SellOrderRepository sellOrderRepository;
 
     public OrderProcessor(BuyOrderRepository buyOrderRepository, SellOrderRepository sellOrderRepository) {
         this.buyOrderRepository = buyOrderRepository;

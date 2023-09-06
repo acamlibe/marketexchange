@@ -1,6 +1,5 @@
 package com.alicamlibel.marketexchange.gui;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -24,10 +23,6 @@ public abstract class Gui {
 
     protected void setItem(int index, Material material, String name, String... lore) {
         inventory.setItem(index, createInventoryItem(material, 1, name, lore));
-    }
-
-    protected void addItem(Material material, int quantity, String name, String... lore) {
-        inventory.addItem(createInventoryItem(material, quantity, name, lore));
     }
 
     private ItemStack createInventoryItem(Material material, int quantity, String name, String... lore) {
